@@ -1,0 +1,21 @@
+/*	Code implementation info
+--------------------------------------- */
+.code-info {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.8rem;
+
+    padding: 1rem;
+    border-left: 0.6rem solid var(--sky-blue);
+    background-color: var(--blue);
+
+    color: var(--sky-blue);
+    font-style: italic;
+
+    svg {
+        flex-shrink: 0;
+        margin-top: 0.3rem;
+    }
+}

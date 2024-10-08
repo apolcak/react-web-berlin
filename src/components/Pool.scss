@@ -1,0 +1,85 @@
+@import "../settings";
+
+$first-column-space: 2rem;
+
+.pool {
+    display: grid;
+    grid-template-columns: $first-column-space 5rem auto;
+    // grid-template-rows: repeat(3, auto);
+    align-items: center;
+    margin-bottom: 0.4rem;
+
+    // &__state {
+    //     width: 2rem;
+    // }
+}
+
+.note {
+    grid-column-start: span 3;
+    padding-left: $first-column-space;
+
+    &__open {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.4rem;
+        font-size: smaller;
+        text-decoration: underline;
+        cursor: pointer;
+        color: var(--turquoise);
+
+        span {
+            text-decoration: none;
+        }
+    }
+
+    &__info {
+        display: none;
+        margin-top: 0.4rem;
+        padding: 0.4rem;
+        background-color: var(--turquoise);
+        line-height: 1.4;
+        border-radius: 0.4rem;
+
+        &.active {
+            display: block;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        tr {
+
+            &:last-child {
+
+                th,
+                td {
+                    padding-bottom: 0;
+                }
+            }
+        }
+
+        th,
+        td {
+            padding-bottom: 0.8rem;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        th {
+            padding-right: 1rem;
+            padding-left: 0;
+            font-weight: normal;
+        }
+
+        td {
+            font-style: italic;
+        }
+    }
+
+    @media screen and (max-width: $mobile) {
+        padding-left: 0;
+    }
+}

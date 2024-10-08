@@ -1,0 +1,30 @@
+.fact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+
+    padding: 1rem;
+    border: 2px solid var(--green);
+    border-radius: 0.5rem;
+    text-align: center;
+
+    figure {
+        margin: 0;
+        font-size: 0;
+        color: var(--yellow);
+
+        svg {
+            font-size: 1rem;
+        }
+    }
+
+    &__title {
+        font-family: "Libre Baskerville", serif;
+        font-weight: 700;
+    }
+
+    &__value {
+        color: var(--greeny);
+    }
+}

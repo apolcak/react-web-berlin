@@ -1,0 +1,67 @@
+.stop {
+    // margin-bottom: 0.6rem;
+    border-top: 1px solid var(--light-gray);
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0.8rem 0;
+    }
+
+    &__name {
+        margin: 0;
+        color: var(--yellow);
+        cursor: pointer;
+    }
+
+    &__departure-cta {
+        flex-shrink: 0;
+        padding: 0.4rem 0.8rem;
+        background-color: var(--green);
+        color: var(--light-gray);
+        color: var(--yellow);
+        border: 0;
+        border-radius: 0.2rem;
+
+        &:hover {
+            background-color: var(--greeny);
+            color: var(--gray);
+        }
+    }
+
+    &__departures-list {
+        margin-top: 0;
+        padding-left: 1.5rem;
+        list-style: none;
+        line-height: 1.3;
+    }
+}
+
+.departure {
+
+    &__direction {
+        color: var(--greeny);
+
+        span {
+            color: var(--green);
+        }
+    }
+}
+
+.time-info {
+    margin-left: 0.4rem;
+
+    &--soon {
+        color: var(--green);
+    }
+
+    &--late {
+        color: var(--red);
+    }
+}
+
+.no-departures-found {
+    padding-left: 1.5rem;
+}

@@ -1,0 +1,11 @@
+.app-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: black;
+    color: gray;
+
+    &__info {
+        margin-bottom: 0;
+    }
+}

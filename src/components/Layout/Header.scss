@@ -1,0 +1,48 @@
+.app-header {
+    z-index: 100;
+    position: fixed;
+    top: 1rem;
+
+    &__navigation {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0.4rem;
+        border-radius: 0.4rem;
+        background: var(--yellow);
+
+        @media screen and (max-width: 450px) {
+            gap: 0.4rem;
+        }
+
+
+        a {
+            padding: 0.4rem 1rem;
+            border: 1px solid transparent;
+            border-radius: 0.4rem;
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            transition: all 0.15s ease;
+
+            &:hover {
+                border-color: var(--beige);
+                color: black;
+            }
+
+            &.activeLink {
+                background-color: var(--beige);
+                color: black;
+            }
+
+            @media screen and (max-width: 450px) {
+                padding: 0.2rem 0.4rem;
+            }
+            @media screen and (max-width: 400px) {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+// @import './../../node_modules/pretty-checkbox/src/pretty-checkbox.scss';
+@import './../../node_modules/pretty-checkbox/src/scss/variables';
+@import './../../node_modules/pretty-checkbox/src/scss/core';
+@import './../../node_modules/pretty-checkbox/src/scss/elements/default/outline';
+@import './../../node_modules/pretty-checkbox/src/scss/extras/curve';
+
+// Override pretty-checkbox styles
+.pretty {
+
+    .state {
+
+        label {
+
+            &::before {
+                border-width: 2px;
+                border-color: var(--greeny);
+                background-color: var(--light-gray);
+            }
+        }
+    }
+
+    &.p-default {
+
+        input:checked {
+
+            & ~ .state {
+
+                label {
+
+                    &::after {
+                        background-color: var(--green) !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 2rem auto;
+    align-items: center;
+
+    dt {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    dd {
+        margin: 0;
+    }
+}
+
+.state {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    aspect-ratio: 1/1;
+    width: 0.8rem;
+    border-radius: 50%;
+
+    /*	Color versions
+    --------------------------------------- */
+    &--1,
+    &--11 {
+        background-color: #96de19;
+    }
+    &--3,
+    &--13 {
+        background-color: #fdc103;
+    }
+    &--2 {
+        background-color: #e50101;
+    }
+}
+
+form {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--green);
+
+    h5 {
+        margin: 0;
+        color: var(--greeny);
+    }
+
+    hr {
+        border-color: var(--greeny);
+    }
+}
+
+.cols {
+    $gap: 1.2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: $gap;
+
+    .col {
+        width: calc(33.3333% - 2/3 * $gap);
+    }
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+
+        .col {
+            width: 100%;
+        }
+    }
+}
+
+.filtrationCol {
+    margin-bottom: 0.5rem;
+}
+
+#filter-by-district {
+
+    input {
+        font-size: 0.85rem;
+    }
+}
+
+#filter-by-note {
+    margin-left: 0;
+}
+
+#filter-by-name {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--greeny);
+    background-color: var(--light-gray);
+    outline: none;
+    font-size: 0.85rem;
+}
+
+.reset-form-wrapper {
+    text-align: center;
+}
+
+#reset-form {
+    padding: 0.8rem;
+    background-color: var(--greeny);
+    color: var(--blue);
+    border: 0;
+    border-radius: 0.5rem;
+
+    &:not(:disabled):hover {
+        background-color: var(--yellow);
+    }
+}

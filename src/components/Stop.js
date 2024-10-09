@@ -97,13 +97,8 @@ const Stop = ({stop,index}) => {
                         {departures.map((departure, index) => (
                             <li key={index} className="departure">
                                 {timeFormat(departure.when)}
-                                {departure.delay > 0 ? (
-                                    <small className="time-info time-info--late">+{departure.delay}s</small>
-                                ) : departure.delay < 0 ? (
-                                    <small className='time-info time-info--soon'>{departure.delay}s</small>
-                                ) : (
-                                    <></>
-                                )}
+                                {departure.delay > 0 && <small className="time-info time-info--late">+{departure.delay}s</small>}
+                                {departure.delay < 0 && <small className='time-info time-info--soon'>{departure.delay}s</small>}
                                 <p className="departure__direction"><span>→</span> {departure.direction}</p>
                             </li>
                         ))}

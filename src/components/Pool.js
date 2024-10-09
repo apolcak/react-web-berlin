@@ -5,12 +5,9 @@ import './Pool.scss'
 const Pool = ({id,badname,wasserqualitaet,dat,bemerkung,weitere_hinweise}) => {
 
     const [noteOpened, setNoteOpened] = useState(false)
-    const [openNoteText, setOpenNoteText] = useState('Zobrazit podrobné informace')
 
     const handlePoolInfoToggle = (event,element) => {
         event.preventDefault();
-
-        setOpenNoteText(noteOpened ? 'Zobrazit podrobné informace' : 'Skrýt podrobné informace')
 
         setNoteOpened(!noteOpened)  // toggle bool value
     }
@@ -24,7 +21,7 @@ const Pool = ({id,badname,wasserqualitaet,dat,bemerkung,weitere_hinweise}) => {
                 // Conditional rendering - if some type of note, include it
                 (bemerkung || weitere_hinweise) &&
                 <div className="note">
-                    <a className="note__open" onClick={handlePoolInfoToggle}>{openNoteText}</a>
+                    <a className="note__open" onClick={handlePoolInfoToggle}>{noteOpened ? 'Zobrazit podrobné informace' : 'Skrýt podrobné informace'}</a>
                     <div className={`note__info${ noteOpened ? ' active' : ''} `}>
                         <table>
                             <tbody>

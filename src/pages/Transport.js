@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import TheCodeInfo from '../components/TheCodeInfo'
+import CodeInfo from '../components/CodeInfo'
 import UsedLibs from "../components/UsedLibs"
 import Stop from "../components/Stop"
 
@@ -47,7 +47,7 @@ const Transport = () => {
     return (
         <div className="container">
             <h1>Doprava</h1>
-            <TheCodeInfo info="Tato stránka na základě zadaného řetězce vyhledá zastávky hromadné dopravy. U každé z nich jde dále vyžádat seznam nejdřívějších spojů." />
+            <CodeInfo info="Tato stránka na základě zadaného řetězce vyhledá zastávky hromadné dopravy. U každé z nich jde dále vyžádat seznam nejdřívějších spojů." />
             <section>
                 <form onSubmit={handleStopSearchSubmit} className="transport-form">
                     <label htmlFor="search-stop">Zadejte název zastávky:&nbsp;</label>

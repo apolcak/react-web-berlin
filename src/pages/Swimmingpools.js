@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react'
 
-import TheCodeInfo from '../components/TheCodeInfo';
+import CodeInfo from '../components/CodeInfo';
 import UsedLibs from "../components/UsedLibs"
 import Select from 'react-select';
 import Pool from '../components/Pool';
@@ -148,7 +148,7 @@ const Swimmingpools = () => {
     return (
         <div className='container'>
             <h1>Kde si zaplavat</h1>
-            <TheCodeInfo info="Tato stránka zpracuje data ve formátu json. Některá data rovnou použije pro umožnění filtrace výpisu." />
+            <CodeInfo info="Tato stránka zpracuje data ve formátu json. Některá data rovnou použije pro umožnění filtrace výpisu." />
             <UsedLibs sources={usedLibs} />
             <div className="filtration">
                 <div>

@@ -1,5 +1,5 @@
 import data from './../data-path-of-visionaries'
-import TheCodeInfo from './TheCodeInfo';
+import CodeInfo from './CodeInfo';
 
 import Plaque from './Plaque';
 
@@ -12,7 +12,7 @@ const ThePathOfVisionaries = () => {
         <section className="plaque-pick">
             <h2>Pfad der Visionäre</h2>
             <p>V Berlíně, v části zvané Kreuzberg, se nachází umělecký projekt s názvem Pfad der Visionäre, který sestává z desek umístěných na povrchu chodníku pěší zóny. Každá deska obsahuje citát významné osoby každé členské země EU.</p>
-            <TheCodeInfo info="Tato sekce při každé návštěvě náhodně vybere jeden z citátů." />
+            <CodeInfo info="Tato sekce při každé návštěvě náhodně vybere jeden z citátů." />
             <Plaque {...plaqueRandomPick} />
         </section>
     )

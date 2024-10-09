@@ -57,13 +57,13 @@ const Stop = ({stop,index}) => {
                 } else {
                     setNoDepartures('Nenalezeny žádné příjezdy')
                 }
-                setLoading(false)
                 refButton.current.innerText = 'Aktualizovat'
             })
             .catch(error => {
                 console.error('Error:', error)
                 setError(true)
-            });
+            })
+            .finally(() => setLoading(false));
     }
 
     useEffect(() => {

@@ -22,7 +22,6 @@ const Transport = () => {
     const handleStopSearchSubmit = (e) => {
         e.preventDefault();
 
-        // Check the input
         if ( ! stopSearch || stopSearch.length <3 ) {
             alert('Musíte vyplnit alespoň 3 znaky názvu zastávky!')
             return

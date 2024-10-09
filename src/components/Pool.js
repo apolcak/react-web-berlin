@@ -9,7 +9,7 @@ const Pool = ({id,badname,wasserqualitaet,dat,bemerkung,weitere_hinweise}) => {
     const handlePoolInfoToggle = (event,element) => {
         event.preventDefault();
 
-        setNoteOpened(!noteOpened)  // toggle bool value
+        setNoteOpened(!noteOpened)
     }
 
     return (
@@ -18,7 +18,6 @@ const Pool = ({id,badname,wasserqualitaet,dat,bemerkung,weitere_hinweise}) => {
             <small className="pool__last-check">{dat}</small>
             <strong className="pool__title">{badname}</strong>
             {
-                // Conditional rendering - if some type of note, include it
                 (bemerkung || weitere_hinweise) &&
                 <div className="note">
                     <a className="note__open" onClick={handlePoolInfoToggle}>{noteOpened ? 'Zobrazit podrobné informace' : 'Skrýt podrobné informace'}</a>

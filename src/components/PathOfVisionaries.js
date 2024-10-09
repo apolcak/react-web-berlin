@@ -5,7 +5,6 @@ import Plaque from './Plaque';
 
 const PathOfVisionaries = () => {
 
-    // Get random pick from
     const plaqueRandomPick = data[Math.floor(Math.random()*data.length)];
 
     return (

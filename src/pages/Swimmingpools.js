@@ -80,7 +80,6 @@ const Swimmingpools = () => {
         if ( selectedDistrict ) {
             if ( pool.bezirk == selectedDistrict.value ) isInDistrict = true
         } else {
-            // Fallback
             isInDistrict = true
         }
 
@@ -88,7 +87,6 @@ const Swimmingpools = () => {
         if ( withNote ) {
             if ( pool.bemerkung || pool.weitere_hinweise ) hasNote = true
         } else {
-            // Fallback
             hasNote = true
         }
 
@@ -96,7 +94,6 @@ const Swimmingpools = () => {
         if ( containsString ) {
             if ( pool.badname.toLowerCase().indexOf(containsString) >= 0 ) hasString = true
         } else {
-            // Fallback
             hasString = true
         }
 
@@ -253,13 +250,11 @@ const Swimmingpools = () => {
             </div>
             <div className="pools">
                 {
-                    // All pools matching the filters
                     filteredPools.map((pool) => {
                         return <Pool key={pool.id} {...pool} />
                     })
                 }
                 {
-                    // No results message
                     filteredPools.length<=0 && <div id="no-results">Filtraci neodpovídají žádné položky</div>
                 }
             </div>

@@ -40,8 +40,8 @@ const Stop = ({stop,index}) => {
 
     const fetchDepartures = (fetchedStopId) => {
 
-        setLoading(true); // Set loading to true when starting the fetch
-        setError(null); // Reset the error state before fetching new data
+        setLoading(true);
+        setError(null);
 
         let curlUrl = `https://v6.vbb.transport.rest/stops/${fetchedStopId}/departures?results=10`
         fetch(curlUrl, {
@@ -55,7 +55,6 @@ const Stop = ({stop,index}) => {
                 if ( data.departures.length>0 ) {
                     setDepartures(data.departures)
                 } else {
-                    // No departures at this moment
                     setNoDepartures('Nenalezeny žádné příjezdy')
                 }
                 setLoading(false)
@@ -69,10 +68,10 @@ const Stop = ({stop,index}) => {
 
     useEffect(() => {
 
-        if (selectedStop === null) return; // Do nothing if no bus stop is selected
+        if (selectedStop === null) return;
 
-        setLoading(true); // Set loading to true when starting the fetch
-        setError(null); // Reset the error state before fetching new data
+        setLoading(true);
+        setError(null);
 
         fetchDepartures(selectedStop)
 

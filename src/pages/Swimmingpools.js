@@ -140,7 +140,6 @@ const Swimmingpools = () => {
         <div className='container'>
             <h1>Kde si zaplavat</h1>
             <CodeInfo info="Tato stránka zpracuje data ve formátu json. Některá data rovnou použije pro umožnění filtrace výpisu." />
-            <UsedLibs sources={usedLibs} />
             <div className="filtration">
                 <div>
                     <h2>Přehled míst</h2>
@@ -248,7 +247,7 @@ const Swimmingpools = () => {
                     </form>
                 </div>
             </div>
-            <div className="pools">
+            <section className="pools">
                 {
                     filteredPools.map((pool) => {
                         return <Pool key={pool.id} {...pool} />
@@ -257,7 +256,8 @@ const Swimmingpools = () => {
                 {
                     filteredPools.length<=0 && <div id="no-results">Filtraci neodpovídají žádné položky</div>
                 }
-            </div>
+            </section>
+            <UsedLibs sources={usedLibs} />
         </div>
     )
 }

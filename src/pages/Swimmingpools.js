@@ -26,13 +26,7 @@ const options = []
 
 const Swimmingpools = () => {
 
-    const checkResetButtonState = () => {
-        if ( !selectedDistrict && !withNote && !containsString ) {
-            setResetDisabled(true)
-        } else {
-            setResetDisabled(false)
-        }
-    }
+    const checkResetButtonState = () => setResetDisabled(!selectedDistrict && !withNote && !containsString);
 
     const [loading, setLoading] = useState(true)
     const [pools, setPools] = useState([])

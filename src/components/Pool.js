@@ -10,11 +10,7 @@ const Pool = ({id,badname,wasserqualitaet,dat,bemerkung,weitere_hinweise}) => {
     const handlePoolInfoToggle = (event,element) => {
         event.preventDefault();
 
-        if ( noteOpened ) {
-            setOpenNoteText('Zobrazit podrobné informace')
-        } else {
-            setOpenNoteText('Skrýt podrobné informace')
-        }
+        setOpenNoteText(noteOpened ? 'Zobrazit podrobné informace' : 'Skrýt podrobné informace')
 
         setNoteOpened(!noteOpened)  // toggle bool value
     }

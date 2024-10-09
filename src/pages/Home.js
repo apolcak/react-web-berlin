@@ -1,4 +1,4 @@
-import ThePathOfVisionaries from "./../components/ThePathOfVisionaries"
+import PathOfVisionaries from "./../components/PathOfVisionaries"
 import UsedLibs from "../components/UsedLibs"
 import Facts from "./../components/Facts"
 import Tabs from "./../components/Tabs"
@@ -23,7 +23,7 @@ const Home = () => {
             <section className="hero">
                 <p>Tento web je vytvořen pomocí knihovny React a zaměřuje se na prezentaci využití jeho základních hooků a technik.<br />Tématem webu je hlavní město Německa, které jsem měl možnost nedávno navštívit.</p>
             </section>
-            <ThePathOfVisionaries />
+            <PathOfVisionaries />
             <Facts />
             <Tabs />
             <UsedLibs sources={usedLibs} />

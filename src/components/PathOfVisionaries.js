@@ -1,9 +1,9 @@
-import data from './../data-path-of-visionaries'
+import data from '../data-path-of-visionaries'
 import CodeInfo from './CodeInfo';
 
 import Plaque from './Plaque';
 
-const ThePathOfVisionaries = () => {
+const PathOfVisionaries = () => {
 
     // Get random pick from
     const plaqueRandomPick = data[Math.floor(Math.random()*data.length)];
@@ -18,4 +18,4 @@ const ThePathOfVisionaries = () => {
     )
 }
 
-export default ThePathOfVisionaries
+export default PathOfVisionaries

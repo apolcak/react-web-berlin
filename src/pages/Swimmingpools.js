@@ -72,30 +72,9 @@ const Swimmingpools = () => {
 
     const filteredPools = pools.filter((pool) => {
 
-        let isInDistrict = false,
-            hasNote = false,
-            hasString = false
-
-        // Filter by selected district
-        if ( selectedDistrict ) {
-            if ( pool.bezirk == selectedDistrict.value ) isInDistrict = true
-        } else {
-            isInDistrict = true
-        }
-
-        // Filter by has note
-        if ( withNote ) {
-            if ( pool.bemerkung || pool.weitere_hinweise ) hasNote = true
-        } else {
-            hasNote = true
-        }
-
-        // Filter by name substring
-        if ( containsString ) {
-            if ( pool.badname.toLowerCase().indexOf(containsString) >= 0 ) hasString = true
-        } else {
-            hasString = true
-        }
+        let isInDistrict = selectedDistrict && pool.bezirk !== selectedDistrict.value ? false : true
+        let hasNote = withNote && !pool.bemerkung && !pool.weitere_hinweise ? false : true
+        let hasString = containsString && pool.badname.toLowerCase().indexOf(containsString) < 0 ? false : true
 
         return (isInDistrict && hasNote && hasString) ?? pool
     } )

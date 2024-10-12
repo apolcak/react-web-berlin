@@ -1,5 +1,6 @@
-import dataFacts from "../data-facts"
-import Fact from "./Fact"
+import dataFacts from "../../data-facts"
+import Fact from "./../Fact/Fact"
+
 import './Facts.scss'
 
 const Facts = () => {

@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-import CodeInfo from '../components/CodeInfo'
-import UsedLibs from "../components/UsedLibs"
-import Stop from "../components/Stop"
+import CodeInfo from '../components/CodeInfo/CodeInfo'
+import UsedLibs from "../components/UsedLibs/UsedLibs"
+import Stop from "../components/Stop/Stop"
 
 import "./Transport.scss"
 

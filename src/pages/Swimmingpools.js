@@ -1,9 +1,9 @@
 import { useEffect, useState, useRef } from 'react'
 
-import CodeInfo from '../components/CodeInfo';
-import UsedLibs from "../components/UsedLibs"
+import CodeInfo from '../components/CodeInfo/CodeInfo';
+import UsedLibs from "../components/UsedLibs/UsedLibs"
 import Select from 'react-select';
-import Pool from '../components/Pool';
+import Pool from '../components/Pool/Pool';
 
 import "./Swimmingpools.scss"
 

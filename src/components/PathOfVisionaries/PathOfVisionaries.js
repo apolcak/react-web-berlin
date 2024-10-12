@@ -1,7 +1,7 @@
-import data from '../data-path-of-visionaries'
-import CodeInfo from './CodeInfo';
+import data from '../../data-path-of-visionaries'
+import CodeInfo from '../CodeInfo/CodeInfo';
 
-import Plaque from './Plaque';
+import Plaque from '../Plaque/Plaque';
 
 const PathOfVisionaries = () => {
 

@@ -1,7 +1,7 @@
-import PathOfVisionaries from "./../components/PathOfVisionaries"
-import UsedLibs from "../components/UsedLibs"
-import Facts from "./../components/Facts"
-import Tabs from "./../components/Tabs"
+import PathOfVisionaries from "../components/PathOfVisionaries/PathOfVisionaries"
+import UsedLibs from "./../components/UsedLibs/UsedLibs"
+import Facts from "./../components/Facts/Facts"
+import Tabs from "./../components/Tabs/Tabs"
 
 import "./Home.scss"
 

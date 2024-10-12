@@ -1,5 +1,5 @@
 import dataFacts from "../../data-facts"
-import Fact from "./../Fact/Fact"
+import Fact from "../Fact/Fact"
 
 import './Facts.scss'
 

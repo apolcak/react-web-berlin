@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-import tabs from './../../data-tabs'
+import tabs from '../../data-tabs'
 
-import Tab from './../Tab/Tab'
+import Tab from '../Tab/Tab'
 import './Tabs.scss'
 
 const Tabs = () => {

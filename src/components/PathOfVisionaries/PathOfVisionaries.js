@@ -1,9 +1,12 @@
-import data from '../../data-path-of-visionaries'
-import CodeInfo from '../CodeInfo/CodeInfo';
+import CodeInfo from '../CodeInfo/CodeInfo'
 
-import Plaque from '../Plaque/Plaque';
+import plaques from '../../data-path-of-visionaries.json'
+
+import Plaque from '../Plaque/Plaque'
 
 const PathOfVisionaries = () => {
+
+    const data = plaques.items
 
     const plaqueRandomPick = data[Math.floor(Math.random()*data.length)];
 

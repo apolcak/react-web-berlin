@@ -2,22 +2,22 @@ import { FaMap, FaFlag, FaBorderTopLeft, FaPeopleGroup } from "react-icons/fa6";
 
 const dataFacts = [
     {
-        'Icon': FaFlag,
+        'icon': FaFlag,
         'title': 'Stát',
         'value': 'Německo'
     },
     {
-        'Icon': FaMap,
+        'icon': FaMap,
         'title': 'Souřadnice',
         'value': '52°31′ s. š., 13°23′ v. d.'
     },
     {
-        'Icon': FaBorderTopLeft,
+        'icon': FaBorderTopLeft,
         'title': 'Rozloha',
         'value': '891,1 km<sup>2</sup>'
     },
     {
-        'Icon': FaPeopleGroup,
+        'icon': FaPeopleGroup,
         'title': 'Počet obyvatel',
         'value': '3667472'
     },

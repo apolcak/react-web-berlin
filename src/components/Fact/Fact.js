@@ -2,7 +2,7 @@ import parse from 'html-react-parser'   // Import html-react-parser to parse str
 
 import "./Fact.scss"
 
-const Fact = ({Icon,title,value}) => {
+const Fact = ({icon : Icon,title,value}) => {
     return (
         <article className="fact">
             <figure><Icon /></figure>

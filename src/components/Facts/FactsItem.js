@@ -1,8 +1,8 @@
 import parse from 'html-react-parser'; // Import html-react-parser to parse string to html
 
-import './Fact.scss';
+import './FactsItem.scss';
 
-const Fact = ({ icon: Icon, title, value }) => {
+const FactsItem = ({ icon: Icon, title, value }) => {
     return (
         <article className="fact">
             <figure>
@@ -14,4 +14,4 @@ const Fact = ({ icon: Icon, title, value }) => {
     );
 };
 
-export default Fact;
+export default FactsItem;

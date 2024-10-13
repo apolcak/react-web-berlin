@@ -1,5 +1,5 @@
 import dataFacts from '../../data-facts';
-import Fact from './Fact';
+import FactsItem from './FactsItem';
 
 import './Facts.scss';
 
@@ -9,7 +9,7 @@ const Facts = () => {
             <h2>Základní fakta o Berlíně</h2>
             <div className="facts__grid">
                 {dataFacts.map((fact, index) => {
-                    return <Fact key={index} {...fact} />;
+                    return <FactsItem key={index} {...fact} />;
                 })}
             </div>
         </section>

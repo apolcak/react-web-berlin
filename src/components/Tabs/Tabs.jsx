@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import Tab from '../Tab/Tab';
+import TabsItem from './TabsItem';
 
 import tabsData from '../../data-tabs.json';
 import './Tabs.scss';
@@ -38,7 +38,7 @@ const Tabs = () => {
                 {tabs.map((tab, index) => {
                     let show = index === visibleTab;
 
-                    return show && <Tab key={index} {...tab} />;
+                    return show && <TabsItem key={index} {...tab} />;
                 })}
             </div>
         </section>

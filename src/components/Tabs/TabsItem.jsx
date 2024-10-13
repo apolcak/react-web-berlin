@@ -1,4 +1,4 @@
-const Tab = ({ id, title, info }) => {
+const TabsItem = ({ id, title, info }) => {
     return (
         <article className="tab-content">
             <p>{info}</p>
@@ -6,4 +6,4 @@ const Tab = ({ id, title, info }) => {
     );
 };
 
-export default Tab;
+export default TabsItem;

@@ -1,4 +1,4 @@
-@import "../../settings";
+@import '../../settings';
 
 $first-column-space: 2rem;
 
@@ -51,9 +51,7 @@ $first-column-space: 2rem;
         }
 
         tr {
-
             &:last-child {
-
                 th,
                 td {
                     padding-bottom: 0;

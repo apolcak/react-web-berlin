@@ -1,11 +1,14 @@
-import { BsFillInfoSquareFill } from "react-icons/bs";
+import { BsFillInfoSquareFill } from 'react-icons/bs';
 
-import "./CodeInfo.scss"
+import './CodeInfo.scss';
 
-const CodeInfo = ({info}) => {
+const CodeInfo = ({ info }) => {
     return (
-        <p className="code-info"><BsFillInfoSquareFill />{info}</p>
-    )
-}
+        <p className="code-info">
+            <BsFillInfoSquareFill />
+            {info}
+        </p>
+    );
+};
 
-export default CodeInfo
+export default CodeInfo;

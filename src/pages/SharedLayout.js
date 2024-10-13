@@ -1,6 +1,6 @@
-import { Outlet } from "react-router-dom"
+import { Outlet } from 'react-router-dom';
 
-import { Header, Footer } from "../components/Layout"
+import { Header, Footer } from '../components/Layout';
 
 const SharedLayout = () => {
     return (
@@ -9,7 +9,7 @@ const SharedLayout = () => {
             <Outlet />
             <Footer />
         </section>
-    )
-}
+    );
+};
 
-export default SharedLayout
+export default SharedLayout;

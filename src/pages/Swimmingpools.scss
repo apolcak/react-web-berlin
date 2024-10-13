@@ -6,11 +6,8 @@
 
 // Override pretty-checkbox styles
 .pretty {
-
     .state {
-
         label {
-
             &::before {
                 border-width: 2px;
                 border-color: var(--greeny);
@@ -20,13 +17,9 @@
     }
 
     &.p-default {
-
         input:checked {
-
             & ~ .state {
-
                 label {
-
                     &::after {
                         background-color: var(--green) !important;
                     }
@@ -103,7 +96,7 @@ form {
     gap: $gap;
 
     .col {
-        width: calc(33.3333% - 2/3 * $gap);
+        width: calc(33.3333% - 2 / 3 * $gap);
     }
 
     @media screen and (max-width: 600px) {
@@ -120,7 +113,6 @@ form {
 }
 
 #filter-by-district {
-
     input {
         font-size: 0.85rem;
     }

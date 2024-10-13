@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Mukta:wght@400;700&display=swap');
 
-@import "./settings";
+@import './settings';
 
 /*	CSS Variables
 --------------------------------------- */
@@ -9,15 +9,15 @@
 :root {
     // - colors
     --gray: #333333;
-    --light-gray: #F0F0F0;
-    --red: #E4002B;
+    --light-gray: #f0f0f0;
+    --red: #e4002b;
     --turquoise: #009999;
     --green: #708238;
     --greeny: #a7d41a;
-    --beige: #D2B48C;
-    --yellow: #FFD700;
+    --beige: #d2b48c;
+    --yellow: #ffd700;
     --blue: #003153;
-    --sky-blue: #B3E5FC;
+    --sky-blue: #b3e5fc;
 }
 
 /*	Some normalizing
@@ -28,7 +28,7 @@ body {
     padding-top: 5.4rem;
     background-color: var(--gray);
     color: var(--light-gray);
-    font-family: "Mukta", sans-serif;
+    font-family: 'Mukta', sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -37,8 +37,12 @@ body {
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: "Libre Baskerville", serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Libre Baskerville', serif;
     font-weight: 700;
     font-style: normal;
     color: var(--beige);

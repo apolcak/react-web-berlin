@@ -72,19 +72,18 @@ const SwimmingPools = () => {
     };
 
     const filteredPools = pools.filter((pool) => {
-        let isInDistrict =
+        const isInDistrict = !(
             selectedDistrict && pool.bezirk !== selectedDistrict.value
-                ? false
-                : true;
-        let hasNote =
-            withNote && !pool.bemerkung && !pool.weitere_hinweise
-                ? false
-                : true;
-        let hasString =
+        );
+        const hasNote = !(
+            withNote &&
+            !pool.bemerkung &&
+            !pool.weitere_hinweise
+        );
+        const hasString = !(
             containsString &&
             pool.badname.toLowerCase().indexOf(containsString) < 0
-                ? false
-                : true;
+        );
 
         return (isInDistrict && hasNote && hasString) ?? pool;
     });

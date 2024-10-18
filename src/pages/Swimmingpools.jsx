@@ -5,7 +5,7 @@ import UsedLibs from '../components/UsedLibs/UsedLibs';
 import Select from 'react-select';
 import Pool from '../components/Pool/Pool';
 
-import './Swimmingpools.scss';
+import './SwimmingPools.scss';
 
 const sourceUrl =
     'https://www.berlin.de/lageso/gesundheit/gesundheitsschutz/badegewaesser/liste-der-badestellen/index.php/index/all.json?q=';
@@ -25,7 +25,7 @@ const usedLibs = [
 
 const options = [];
 
-const Swimmingpools = () => {
+const SwimmingPools = () => {
     const checkResetButtonState = () =>
         setResetDisabled(!selectedDistrict && !withNote && !containsString);
 
@@ -276,4 +276,4 @@ const Swimmingpools = () => {
     );
 };
 
-export default Swimmingpools;
+export default SwimmingPools;

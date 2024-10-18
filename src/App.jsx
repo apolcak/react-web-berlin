@@ -2,7 +2,7 @@
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Swimmingpools from './pages/Swimmingpools';
+import SwimmingPools from './pages/SwimmingPools';
 import SharedLayout from './pages/SharedLayout';
 import Transport from './pages/Transport';
 import Error from './pages/Error';
@@ -16,7 +16,7 @@ const App = () => {
             <Routes>
                 <Route element={<SharedLayout />}>
                     <Route path="/" element={<Home />} />
-                    <Route path="/swimmingpools" element={<Swimmingpools />} />
+                    <Route path="/swimmingpools" element={<SwimmingPools />} />
                     <Route path="/transport" element={<Transport />} />
                     <Route path="*" element={<Error />} />
                 </Route>

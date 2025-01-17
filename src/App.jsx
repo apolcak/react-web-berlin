@@ -12,7 +12,7 @@ import './App.scss';
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/portfolio/react/web-berlin">
             <Routes>
                 <Route element={<SharedLayout />}>
                     <Route path="/" element={<Home />} />

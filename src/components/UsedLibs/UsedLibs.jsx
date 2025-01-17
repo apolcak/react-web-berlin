@@ -14,7 +14,15 @@ const UsedLibs = ({ sources }) => {
                 {sources.map((source, index) => {
                     return (
                         <li key={index}>
-                            {source.name} [<a href={source.url}>URL</a>]
+                            {source.name} [
+                            <a
+                                href={source.url}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                URL
+                            </a>
+                            ]
                             {source.desc && (
                                 <>
                                     <br />
